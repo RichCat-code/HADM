@@ -8,7 +8,7 @@ Commands can be tedious and hard to write, that's why this shit exists! Because 
 (👉ﾟヮﾟ)👉
 
 HADM is made with simplicity in mind, so just specify what you'd like to do and follow the steps!
-It's that S-H-R-I-M-P-L-E. (Why do I do this to myself?...)
+It's that SHRIMPLE. (Why do I do this to myself?...)
 
 At the moment, the following utility categories are planned(I have no detailed plan of structure at the moment.)
 Finished categories are ticked with a checkbox:
