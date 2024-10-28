@@ -17,16 +17,17 @@ At the moment, the following utility categories are planned(I have no detailed p
 Finished categories are ticked with a checkbox:
 
 - [X] Hardware status (CPU/Tasks/RAM(Short/Long)) using `top`
-- [ ] Hardware temperatures using `lm-sensors`
-  - [X] Check availibility on WSL/WSL2 (Does not work according to the devs)
-  - [ ] Check availability on physical device (Should work...)
-- [ ] S.M.A.R.T utility (Drive management/status) using `smartmon`
+- [X] Hardware temperatures using `lm-sensors`
+  - [X] Check availibility on WSL/WSL2/VM (Does not work, maybe I could make it work though... (T_T) )
+  - [X] Check availability on an native Linux device (It does work... Usually! (⊙ˍ⊙) )
+- [X] S.M.A.R.T utility (Drive management/status) using `smartmon`
   - [X] Scan for drives.
   - [X] Retrieve drive data.
-  - [ ] Health control of specified drive (`smartctl`).
+  - [X] Health control of specified drive (`smartctl`).
 - [X] Drive I/O (Drive I/O statistics and status) using `iostat`
 - [ ] Network details (UP/DOWN/TYPE) using `ss`
-  - [ ] Have to do this at a linux native device.
+  - [X] Check availability on WSL/WSL2/VM (Does not work, maybe I could make it work though... (T_T) ).
+  - [ ] Check availability on an native Linux device (It'll probably work, unless something is very wrong... (⊙ˍ⊙))
 - [ ] Usage alert (Drive full, low battery) using `N/A`
 
 Here are some things I'm planning on implementing to make usage of HADM easier!:
@@ -34,6 +35,11 @@ Here are some things I'm planning on implementing to make usage of HADM easier!:
 - [ ] Find a way to get the script crontabbed.
 - [ ] Finish my python assignments... So I can work on this full-time :'D
 - [ ] Optimize the code, so it doesn't look like actual spaghetti...
+- [ ] Have an install script to make installing necessary packages easier.
+  - [ ] Install/Uninstall with the script.
+  - [X] Checks exit status codes for `apt`: (0/1/100/*).
+  - [X] Checks for sudo perms. (`WE NEED SUDO! ┻━┻ ︵ ＼( °□° )／ ︵ ┻━┻`)
+  - [X] `yes`
 
 *****************
 
@@ -42,7 +48,7 @@ Here are some things I'm planning on implementing to make usage of HADM easier!:
 ### Sudo priviliges
 
 HADM uses some tools that require SUDO privs, usually you shouldn't just give SUDO privs to a script that you've found online, but the script is relatively simple, so if you decide to read and find out how it works, you'll see that it will not be malicious and execute any `MALICIOUS CODE` or `RUIN YOUR SYSTEM` in any kind of way.
-(If you're still skeptical, then what are you even doing on GitHub 😅)
+(If you're still skeptical, then I'm not sure what to tell you... 😅)
 
 ### Dependencies
 
